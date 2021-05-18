@@ -11,7 +11,7 @@ using namespace std;
 
 class Genre : public Recommendation {
     public:
-        virtual void recommendList(int var1, Base* var2) {
+        void recommendList(int var1, Base* var2) {
             
         }
 };
