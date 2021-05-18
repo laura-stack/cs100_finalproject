@@ -2,13 +2,16 @@
 #define __BASE_HPP__
 #include <vector> 
 #include <string>
+#include <iostream> 
+
+using namespace std;
 
 class Base { 
-  private: 
+  protected: 
 	string title;
 	vector<string> genres;
   public: 
-	Base() : title(""), genres() {}; 
+	Base() : title(""), genres() {}   
 
 	Base (string t, vector<string> g) {
 	title = t; 
@@ -18,6 +21,6 @@ class Base {
 	virtual string getTitle() = 0; 
 	virtual void setTitle(string newTitle) = 0; 
 
-}
+};
 
 #endif
