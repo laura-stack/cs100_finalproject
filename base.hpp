@@ -3,7 +3,12 @@
 
 class Base { 
   private: 
-	string title; 
+	string title;
+	string genre;
+	int year
+	int rating;
+	int moviecount; 
+	string director;  
   public: 
 	string getTitle(); 
 	string getGenre(); 
