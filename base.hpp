@@ -15,7 +15,7 @@ class Base {
 	int getYear(); 
 	int getRating(); 
 	int getMovieCount(); 
-	string getDirectior();  
+	string getDirector();  
         //not yet sure of possible virtual fxn's
 
 }
