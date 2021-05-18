@@ -26,7 +26,7 @@ Creating a movie recommender seemed interesting to us due to our profound love o
 
 * `Strategy` - With this design pattern, we can define multiple search algorithms such as genre, subgenre, etc. With this, the user can specify an aspect of a movie, and the program will search its database for other movies that are grouped with that aspect. If there are many search categories, main code might get overloaded with all the different implemented strategies. Main code must delegate strategies to a linked object to lessen the burden. This way we can add in more strategies and not have to tamper with the main code.
 
-## Class Diagram
+## Class Diagrams
 ### Strategy Pattern
 ![Strategy](/images/strategy_pattern.jpg)
 
