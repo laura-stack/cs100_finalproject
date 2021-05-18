@@ -26,7 +26,13 @@ Creating a movie recommender seemed interesting to us due to our profound love o
 
 * `Strategy` - With this design pattern, we can define multiple search algorithms such as genre, subgenre, etc. With this, the user can specify an aspect of a movie, and the program will search its database for other movies that are grouped with that aspect. If there are many search categories, main code might get overloaded with all the different implemented strategies. Main code must delegate strategies to a linked object to lessen the burden. This way we can add in more strategies and not have to tamper with the main code.
 
-### Class Diagram
-![Class Diagram](/images/class_diagrams.jpg)
+## Class Diagram
+### Strategy Pattern
+![Strategy](/images/strategy_diagram.jpg)
 
-The class diagram above depicts a rough example of how our classes will be brokehn down. Utlizing the strategy and composite design patterns, we have created separated classes for all the features of the Movie Recommending program. Classes such as `Genre`, `Director`, and `Rating` are derived from the base class `MovieItemComponent`.
+Due to the nature of our project, we chose strategy pattern as a way of managing all of our classes and variables. Our project involves sorting as a form of displaying results but the user can chose which way they want their results found and sorted. For example, they may want all movies of a certain year sorted alphabetically. Therefore we use strategy pattern to organize and manage the various sorting algorithms we are implementing.
+
+### Composite Pattern
+![Composite](/images/composite_diagram.jpg)
+
+We will be using the composite pattern for our project because we will have different aspects of movies implemented. These different aspects will be implemented as composites and will be able to store the movie title, year of release, director, genre, and rating through inheritance. Additionally, users will be able to search for movie recommendations based on these composites. This development will then allow the user to organize their movie recommendations using the different inherited functions within a sorter function.
