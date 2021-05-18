@@ -12,4 +12,6 @@ class ratingSort() {
 		sortRefine(int var1, string var2, Base* var3) 
 }
 
+
+
 #endif //__RATING_SORT_HPP__
