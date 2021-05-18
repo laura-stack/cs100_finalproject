@@ -28,11 +28,11 @@ Creating a movie recommender seemed interesting to us due to our profound love o
 
 ## Class Diagram
 ### Strategy Pattern
-![Strategy](/images/strategy_diagram.jpg)
+![Strategy](/images/strategy_pattern.jpg)
 
 Due to the nature of our project, we chose strategy pattern as a way of managing all of our classes and variables. Our project involves sorting as a form of displaying results but the user can chose which way they want their results found and sorted. For example, they may want all movies of a certain year sorted alphabetically. Therefore we use strategy pattern to organize and manage the various sorting algorithms we are implementing.
 
 ### Composite Pattern
-![Composite](/images/composite_diagram.jpg)
+![Composite](/images/composite_pattern.jpg)
 
 We will be using the composite pattern for our project because we will have different aspects of movies implemented. These different aspects will be implemented as composites and will be able to store the movie title, year of release, director, genre, and rating through inheritance. Additionally, users will be able to search for movie recommendations based on these composites. This development will then allow the user to organize their movie recommendations using the different inherited functions within a sorter function.
