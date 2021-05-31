@@ -14,7 +14,7 @@ class Base {
         virtual void removeMovie(Movie const &newMovie) = 0; 
 
 	virtual string getTitle() = 0; 
-	virtual string getGenre() = 0; 
+	virtual void getGenre() = 0; 
 	virtual void displayAllInfo() = 0; 
 }
 #endif
