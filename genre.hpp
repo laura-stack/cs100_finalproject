@@ -8,6 +8,9 @@
 #include <list>
 #include <vector>
 #include <string>
+#include <iostream>
+
+using namespace std;
 
 class Genres : public Base{
 private: 
@@ -18,26 +21,28 @@ Genres(vector<string> newGenres) {
   genres = newGenres; 
 }
 
-void getGenres() {
+virtual void getGenres() {
    for(unsigned i = 0; i < genres.size() - 1; ++i) {
 	cout << genres.at(i) << ", "; 
    } 
    cout << endl; 
 }
 
-void removeMovies(Movie const &newMovie) { 
-   vector<Movie>::iterator it; 
-   it = find(Movie.begin(), Movie.end(), newMovie); 
-   if( it != Movie.end()){ 
-      Movie.eraseit(); 
-   }
+virtual void removeMovies(Base const &newBase) { 
+   vector<Base>::iterator it; 
+  // it = find(categories.begin(), categories.end(), newBase); 
+  // if( it != categories.end()){ 
+   //   categories.erase(it); 
+  // }
 
-}
+}  
 
-void displayInfo() { 
-   cout << "Genres: " << getGenres(); 
-   for(int i = 0; i < Movies.size(); ++i) {
-      Movies[i].displayInfo(); 
+virtual void addMovies(Base const &newBase) {} 
+
+void displayAllInfo() { 
+  // cout << "Genres: " << getGenres(); 
+   for(int i = 0; i < categories.size(); ++i) {
+      categories[i].displayAllInfo(); 
    }
 }
 

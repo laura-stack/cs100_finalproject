@@ -4,6 +4,9 @@
 #include "base.hpp"
 #include <vector>
 #include <string> 
+#include <iostream>
+
+using namespace std;
 
 class Movie : public Base { 
 private: //? 
@@ -12,6 +15,13 @@ private: //?
      string director; 
      double rating; 
 public: 
+
+Movie() { 
+   year = 0; 
+   title = ""; 
+   director = ""; 
+   rating = 0.0;
+}
 
 Movie (int newYear, string newTitle, string newDirector, double newRating) {
    year = newYear;
@@ -35,6 +45,10 @@ string getDirector() {
 double getRating() {
    return rating;
 }
+
+// virtual void addMovie(Base const &newMovie) {} 
+// virtual void removeMovie(Base const &newMovie) {} 
+ 
 
 void displayAllInfo() { 
    cout << "Movie title: " << getTitle() << endl; 
