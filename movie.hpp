@@ -2,67 +2,35 @@
 #define __MOVIE_HPP__
 
 #include "base.hpp"
-#include <vector>
 #include <string>
-#include <iostream>
+#include <vector> 
 
 using namespace std;
 
-class Movie : public Base {
-private: //?
-     int year;
-     string title;
-     string director;
-     double rating;
-     vector<string> genres;
+class Movie : public Base { 
+private: 
+   string director;
+   int year;
+   double rating; 
 public:
+   Movie : Base() {} 
+   Movie(string title, vector<string> genres) : Base(title, genres) {}
+	
+   string getDirector(); 
+   int getYear(); 
+   double getRating(); 
+   string getTitle(); 
+   vector<string> getGenres(); 
 
-Movie() {
-   year = 0;
-   title = "";
-   director = "";
-   rating = 0.0;
-}
+   void addDirector(string dir); 
+   void addYear (int ye); 
+   void addRating(double rat); 
+   void setTitle(string tit); 
+   void addGenre(string gen); 
+   void setGenres(vector<string> gens); 
 
-Movie (int newYear, string newTitle, string newDirector, double newRating, vector<string> newGenres) {
-   year = newYear;
-   title = newTitle;
-   director = newDirector;
-   rating = newRating;
-   genres = newGenres;
-}
-
-int getYear() {
-   return year;
-}
-
-string getTitle() {
-   return title;
-}
-
-string getDirector() {
-   return director;
-}
-
-double getRating() {
-   return rating;
-}
-vector<string> getGenres() {
-   return genres;
-}
-
-void displayAllInfo() {
-   cout << "Movie title: " << getTitle() << endl;
-   cout << "Released in:  " << getYear() << endl;
-   cout << "Directed by: " << getDirector() << endl;
-   cout << "Rated as: " << getRating() << endl;
-   for(int i = 0; i < genres.size(); i++) {
-        cout << genres.at(i) << ", " ;
-   }
-   cout << endl;
-}
+   void print(); 
 
 };
-
 #endif
-                                 
+
