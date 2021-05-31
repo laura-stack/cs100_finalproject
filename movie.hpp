@@ -47,4 +47,22 @@ string getDirector() {
 double getRating() {
    return rating;
 }
+vector<string> getGenres() {
+   return genres;
+}
+
+void displayAllInfo() {
+   cout << "Movie title: " << getTitle() << endl;
+   cout << "Released in:  " << getYear() << endl;
+   cout << "Directed by: " << getDirector() << endl;
+   cout << "Rated as: " << getRating() << endl;
+   for(int i = 0; i < genres.size(); i++) {
+        cout << genres.at(i) << ", " ;
+   }
+   cout << endl;
+}
+
+};
+
+#endif
                                  
