@@ -1,4 +1,4 @@
-#ifndef __genre_hpp__
+/*#ifndef __genre_hpp__
 #define __genre_hpp__
 
 #include "base.hpp"
@@ -14,39 +14,43 @@ using namespace std;
 
 class Genres : public Base{
 private: 
-   vector<Base> categories;
+   vector<Movie> categories;
    vector<string> genres;
 public:
 Genres(vector<string> newGenres) { 
   genres = newGenres; 
 }
 
-virtual void getGenres() {
+void getGenres() {
    for(unsigned i = 0; i < genres.size() - 1; ++i) {
 	cout << genres.at(i) << ", "; 
    } 
    cout << endl; 
 }
 
-virtual void removeMovies(Base const &newBase) { 
-   vector<Base>::iterator it; 
-  // it = find(categories.begin(), categories.end(), newBase); 
-  // if( it != categories.end()){ 
-   //   categories.erase(it); 
-  // }
+void removeMovies(Movie const &newBase) { 
+   vector<Movie>::iterator it; 
+   it = find(categories.begin(), categories.end(), newBase); 
+   if( it != categories.end()){ 
+      categories.erase(it); 
+   }
 
-}  
 
-virtual void addMovies(Base const &newBase) {} 
+}   
+
+void addMovies(Movie const &newBase) {
+   categories.push_back(newBase); 
+} 
 
 void displayAllInfo() { 
-  // cout << "Genres: " << getGenres(); 
+   cout << "Genres: " ;
+   getGenres(); 
+ 
    for(int i = 0; i < categories.size(); ++i) {
       categories[i].displayAllInfo(); 
    }
 }
 
 }; 
-
 #endif
-
+*/ 

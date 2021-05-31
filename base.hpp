@@ -10,11 +10,11 @@ using namespace std;
 
 class Base { 
   public: 
-	virtual void addMovie(Base const &newMovie) = 0;
-        virtual void removeMovie(Base const &newMovie) = 0; 
+	//void addMovie(Base const &newMovie) = 0;
+        //void removeMovie(Base const &newMovie) = 0; 
 
-	virtual string getTitle() = 0; 
-	virtual void getGenre() = 0; 
+//	virtual string getTitle() = 0; 
+       // virtual void getGenre() = 0; 
 	virtual void displayAllInfo() = 0; 
 };
 #endif
