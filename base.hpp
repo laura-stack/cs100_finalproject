@@ -2,25 +2,19 @@
 #define __BASE_HPP__
 #include <vector> 
 #include <string>
-#include <iostream> 
+#include <iostream>
+#include <iomanip>
+
 
 using namespace std;
 
 class Base { 
-  protected: 
-	string title;
-	vector<string> genres;
   public: 
-	Base() : title(""), genres() {}   
-
-	Base (string t, vector<string> g) {
-	title = t; 
- 	genres = g; 
-	}
+	virtual void addMovie(Movie const &newMovie) = 0;
+        virtual void removeMovie(Movie const &newMovie) = 0; 
 
 	virtual string getTitle() = 0; 
-	virtual void setTitle(string newTitle) = 0; 
-
-};
-
+	virtual string getGenre() = 0; 
+	virtual void displayAllInfo() = 0; 
+}
 #endif

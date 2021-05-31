@@ -6,30 +6,42 @@
 #include <string> 
 
 class Movie : public Base { 
-   protected: //? 
-     int year; 
+private: //? 
+     int year;
+     string title; 
      string director; 
      double rating; 
-   public: 
+public: 
 
-   Movie (); 
-  // Movie(string, vector<string> ); 
+Movie (int newYear, string newTitle, string newDirector, double newRating) {
+   year = newYear;
+   title = newTitle;
+   director = newDirector; 
+   rating = newRating;
+}
 
+int getYear() { 
+   return year;
+}
 
-//get fxn's
-  virtual  string getTitle(); 
-   int getYear(); 
-   string getDirector(); 
-   double getRating(); 
-   string getGenre(); 
+string getTitle() { 
+   return title;
+}
 
-  virtual void setTitle(string t) { 
-    title = t; 
-  } 
+string getDirector() { 
+   return director;
+}
 
-  void setGenres(vector<string gen) { 
-     genres = gen; 
-  } 
+double getRating() {
+   return rating;
+}
+
+void displayAllInfo() { 
+   cout << "Movie title: " << getTitle() << endl; 
+   cout << "Released in:  " << getYear() << endl; 
+   cout << "Directed by: " << getDirector() << endl; 
+   cout << "Rated as: " << getRating() << endl; 
+} 
 
 
 };
