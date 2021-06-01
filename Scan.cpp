@@ -105,7 +105,7 @@ void Scan::scanMovies() {
     	    date = 0;
     	    rating = 0.0;
 
-			delete curMovie;
+			// delete curMovie;
     		}
         
     	myCSV.close();
