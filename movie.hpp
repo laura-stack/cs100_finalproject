@@ -6,7 +6,7 @@
 #include <vector> 
 
 using namespace std;
-
+//movie class
 class Movie : public Base { 
 private: 
    string director;

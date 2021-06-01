@@ -46,7 +46,7 @@ void Movie::addGenre(string gen) {
 }
 
 void Movie::setGenres(vector<string> gens) {
-  this->genres = gens; 
+     this->genres = gens; 
 }
 
 void Movie::print() {
