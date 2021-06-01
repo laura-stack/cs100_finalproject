@@ -37,7 +37,9 @@ void option1(Scan* title) {
     getline(cin, movieTitle);
 
     if (title->isMovie(movieTitle)) {
+		cout << "=======================================================";
         recommend(title->getMovies(), movieTitle, title->getMovMap());
+		cout << "=======================================================" << endl;
     } else {
         cout << "The movie you entered does not exist in the database.\nTry again with one that does."
    ; }
