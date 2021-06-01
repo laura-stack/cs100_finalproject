@@ -1,3 +1,6 @@
+#include "Scan.hpp"
+#include "display.hpp"
+#include "main.cpp"
 #include "menu.h"
 #include <iostream>
 #include <string>
@@ -38,7 +41,7 @@ void option1(Scan* title) {
         recommend(title->getMovies(), movieTitle, title->getMovMap());
     } else {
         cout << "The movie you entered does not exist in the database.\nTry again with one that does."
-    }
+   ; }
 }
 
 // by genre
@@ -67,7 +70,7 @@ void option4(Scan* title) {
 }
 
 // by date
-void option4(Scan* title) {
+void option5(Scan* title) {
     int releaseDate = 0;
     cout << endl << "Enter release date below: " << endl;
     cin >> releaseDate;
