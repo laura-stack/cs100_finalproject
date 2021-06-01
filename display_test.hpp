@@ -2,7 +2,7 @@
 #define __DISPLAY_TEST_HPP__
 
 #include "gtest/gtest.h" 
-#include "stratDisp.hpp"
+#include "display.hpp"
 #include "Strat.hpp"
 #include "movie.hpp"
 #include "Scan.hpp"
