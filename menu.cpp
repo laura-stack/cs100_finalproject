@@ -35,7 +35,7 @@ void option1(Scan* title) {
     getline(cin, movieTitle);
 
     if (title->isMovie(movieTitle)) {
-        recommend(title->getMovies(), movName, title->getMovMap());
+        recommend(title->getMovies(), movieTitle, title->getMovMap());
     } else {
         cout << "The movie you entered does not exist in the database.\nTry again with one that does."
     }
@@ -51,9 +51,9 @@ void option2(Scan* title) {
 }
 
 // by rating
-void option3(Scan* movieName) {
-    movie->setFilters(new ListTen());
-    movie->sort();
+void option3(Scan* title) {
+    title->setFilters(new ListTen());
+    title->sort();
 }
 
 // by director
@@ -68,7 +68,7 @@ void option4(Scan* title) {
 
 // by date
 void option4(Scan* title) {
-    int releaseDate = "";
+    int releaseDate = 0;
     cout << endl << "Enter release date below: " << endl;
     cin >> releaseDate;
     title->setFilters(new ListTenRecent(year));

@@ -6,7 +6,7 @@
 #include <map>
 #include <vector>
 
-#include "movies.hpp"
+#include "movie.hpp"
 #include "Base.hpp"
 #include "category.hpp"
 #include "Scan.hpp"
@@ -15,9 +15,9 @@
 
 using namespace std;
 
-void recommend(vector<Movies*> vals, string movie_title, map<string, Movies*> movieMap);
-int divide(vector<Movies*> &vals, int left, int right);
-void movieSort(vector<Movies*> &vect);
-void quickSort(vector<Movies*> &vals, int left, int right);
+void recommend(vector<Movie*> vals, string movie_title, map<string, Movie*> movieMap);
+int divide(vector<Movie*> &vals, int left, int right);
+void movieSort(vector<Movie*> &vect);
+void quickSort(vector<Movie*> &vals, int left, int right);
 
 #endif //__MAINFUNCTIONS_HPP__

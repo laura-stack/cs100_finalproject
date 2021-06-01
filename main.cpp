@@ -2,7 +2,7 @@
 #include <string>
 #include <map>
 
-#include "movies.hpp"
+#include "movie.hpp"
 #include "Base.hpp"
 #include "category.hpp"
 #include "Scan.hpp"
@@ -21,7 +21,7 @@ int main() {
 
     Scan* findMovie = new Scan();
     findMovie -> scanMovies();
-    vector<Movies*> var1 = findMovie->getMovies();
+    vector<Movie*> var1 = findMovie->getMovies();
     movieSort(var1);
     findMovie->setMovies(var1);
 
