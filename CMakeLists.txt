@@ -15,7 +15,7 @@ mainFunctions.cpp
 category.cpp
 display.cpp
 Scan.cpp
-movies.cpp
+movie.cpp
 )
 
 ADD_EXECUTABLE(test
@@ -23,7 +23,7 @@ unit_test.cpp
 category.cpp
 display.cpp
 Scan.cpp
-movies.cpp
+movie.cpp
 )
 
 TARGET_LINK_LIBRARIES(test gtest)
