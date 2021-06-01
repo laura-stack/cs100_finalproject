@@ -8,26 +8,22 @@
 #include "Scan.hpp"
 #include "display.hpp"
 
-#include "menu.h"
+#include "menu.hpp"
+#include "mainFunctions.hpp"
 
 using namespace std;
 
 class Movies;
 
-// funtions ==========================================================
-/* void intro();
-void menu();
-void option1();
-void option2();
-void option3();
-void option4();
-void option5();
-void option6();
-void quit(); */
-
 // menu ================================================================
 int main() {
     char menuOption = '';
+
+    Scan* findMovie = new Scan();
+    findMovie -> scanMovies();
+    vector<Movies*> var1 = findMovie->getMovies();
+    movieSort(var1);
+    findMovie->setMovies(var1);
 
     intro();
     menu();
@@ -36,17 +32,15 @@ int main() {
 
 	while (menuOption != 'Q' || menuOption != 'q') {
     	if (menuOption == '1') {
-     		option1();
+     		option1(findMovie);
     	} else if(menuOption == '2') {
-        	option2();
+        	option2(findMovie);
     	} else if(menuOption == '3') {
-        	option3();
+        	option4(findMovie);
     	} else if(menuOption == '4') {
-        	option4();
+        	option5(findMovie);
     	} else if(menuOption == '5') {
-        	option5();
-    	} else if(menuOption == '6') {
-        	option6();
+        	option6(findMovie);
 		} else if(menuOption == 'Q' || menuOption == 'q') {
 			quit();
     	} else {
@@ -55,52 +49,6 @@ int main() {
     	}
     }
 
+
     return 0;
 }
-
-// menu options ==============================================================
-void intro() {
-    cout << "=================================================" << endl;
-    cout << "Movie Recommender" << endl;
-    cout << "by: Laura Lopez, Joshua Shabun, William Mayuga" <<  endl;
-    cout << "(CS 100 | Spring 2021)" <<  endl;
-    cout << "=================================================" << endl;
-}
-
-void menu() {
-    cout << endl;
-    cout << "Movie Recommender Menu:" << endl;
-    cout << "Enter the number of the menu option you want (i.e. 1 or q to quit)" << endl;
-    cout << endl;
-    cout << "1. Recommend by Title" << endl;
-    cout << "2. Recommend by Genre" << endl;
-    cout << "3. Recommend by Actor/Actress" << endl;
-    cout << "4. Recommend by Rating" << endl;
-    cout << "5. Recommend by Director" << endl;
-	cout << "6. Recommend by Date"
-    cout << "Q. Quit" << endl << endl;
-    cout << "Enter option: ";
-}
-
-void option1() {
-	
-}
-
-void option2() {
-}
-
-void option3() {
-}
-
-void option4() {
-}
-
-void option5() {
-}
-
-void option6() {
-}
-
-void quit() {
-}
-
