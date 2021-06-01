@@ -48,7 +48,7 @@ int main() {
 			menu();
     	}
     }
-
+    delete findMovie;
 
     return 0;
 }
