@@ -50,7 +50,7 @@ void Movie::setGenres(vector<string> gens) {
 }
 
 void Movie::print() {
-   cout << this->title << endl << "Director: " << director << endl << "Year released: " << year << endl << "Rating: " << rating << endl << "Genres: " ; 
+   cout << this->title << endl << "Director: " << director << endl << "Year released: " << year << endl << "Rating: " << rating << endl << "Genres: " << endl; 
    cout << endl;
    for(int i = 0; i < genres.size(); i++) {
 	cout << genres.at(i) << " " ; 
