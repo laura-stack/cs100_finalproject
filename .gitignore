@@ -1,0 +1,10 @@
+main
+a.out
+
+test
+
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
+lib/
