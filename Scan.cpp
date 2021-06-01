@@ -103,9 +103,8 @@ void Scan::scanMovies() {
  			genres.clear();
 	        movTitle = "";
     	    date = 0;
-    	    rating = 0.0;
-
-			//delete curMovie;
+    	    rating = 0;
+		
     		}
         
     	myCSV.close();
