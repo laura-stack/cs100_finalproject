@@ -27,8 +27,8 @@ void Scan::setMovies(vector<Movie*>movs) {
 		this->movies = movs;
 }
 
-void Scan::filter() {
-		filter->filter(this);
+void Scan::sort() {
+		filter->sort(this);
 }
 
 bool Scan::isMovie(string movName) {

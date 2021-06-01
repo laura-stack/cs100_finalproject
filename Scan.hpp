@@ -20,7 +20,7 @@ class Scan {
 		map<string, Movie*> getMovMap();
 		void setFilters(Strategy* filters);
 		void setMovies(vector<Movie*> movs);
-		void filter();
+		void sort();
 		bool isMovie(string movName);
 		void scanMovies();
 };
