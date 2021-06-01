@@ -78,5 +78,6 @@ void option5(Scan* title) {
 }
 
 int quit() {
-    return 0;
+    cout << "Goodbye" << endl;
+	exit(0);
 }
