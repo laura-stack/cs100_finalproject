@@ -1,7 +1,6 @@
 #include "Scan.hpp"
 #include "display.hpp"
-#include "main.cpp"
-#include "menu.h"
+#include "menu.hpp"
 #include <iostream>
 #include <string>
 #include <map>

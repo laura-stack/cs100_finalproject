@@ -3,6 +3,8 @@
 #include "base.hpp"
 #include "Scan.hpp"
 #include <iostream>
+#include <map>
+#include <string>
 #include <fstream>
 #include <sstream>
 #include <stdlib.h>
@@ -70,7 +72,7 @@ void Scan::scanMovies() {
 
 			for(int i =0; i < start->size(); i++){
             	if(start->at(i) != ','){
-                	genre =+  start->at(i);
+                	genre +=  start->at(i);
             	}
             	if(start->at(i) == ','){
                 	genres.push_back(genre);
