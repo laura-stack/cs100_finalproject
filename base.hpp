@@ -11,7 +11,7 @@ class Base {
 	string title;
 	vector<string> genres;
   public: 
-	Base() : title(""), genres() {}   
+	Base() : title(""), genres() {};    
 
 	Base(string title, vector<string> genres) : title(title), genres(genres){}; 
 

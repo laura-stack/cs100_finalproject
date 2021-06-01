@@ -15,6 +15,7 @@ private:
 public:
    
    Movie() : Base(){} 
+  
    Movie(string title, vector<string>genres) : Base(title, genres) {}
 	
    string getDirector(); 
@@ -29,6 +30,7 @@ public:
    void setTitle(string tit); 
    void addGenre(string gen); 
    void setGenres(vector<string> gens); 
+
 
    void print(); 
 

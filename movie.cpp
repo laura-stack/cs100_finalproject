@@ -41,16 +41,16 @@ void Movie::setTitle(string tit) {
    this->title = tit; 
 }
 
-void addGenre(string gen) {
+void Movie::addGenre(string gen) {
    this->genres.push_back(gen); 
 }
 
-void setGenres(vector<string> gens) {
-   this->genres = gens; 
+void Movie::setGenres(vector<string> gens) {
+  this->genres = gens; 
 }
 
 void Movie::print() {
-   cout << this->title << endl << "Director: " << director << endl << "Year released: " << year << endl << "Rating: " << rating << endl << "Genres: " <<; 
+   cout << this->title << endl << "Director: " << director << endl << "Year released: " << year << endl << "Rating: " << rating << endl << "Genres: " ; 
 
    for(int i = 0; i < genres.size(); i++) {
 	cout << genres.at(i) << " " ; 

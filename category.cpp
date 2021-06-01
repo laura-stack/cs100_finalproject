@@ -17,10 +17,10 @@ void Category::setTitle(string tit) {
    this->title = tit; 
 }
 
-void addMovie(Movie* mov) {
+void Category::addMovie(Movie* mov) {
    this->movies.push_back(mov); 
 }
 
-void addCategory(Category* newCat){
+void Category::addCategory(Category* newCat){
    this->cats.push_back(newCat);
 }
