@@ -5,7 +5,7 @@ class Scan;
 class Strat {
 	public:
 		Strat(){};
-		virtual void filter(Scan* scans) = 0;
+		virtual void sort(Scan* mov) = 0;
 };
 
 #endif
