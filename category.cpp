@@ -5,11 +5,11 @@
 #include <string>
 
 using namespace std;
-string Category::getTitle() {
+string Category::getMovieTitle() {
    return this->title;
 }
 
-vector<string> Category::getGenres() {
+vector<string> Category::getMovieGenres() {
    return this->genres;
 }
 

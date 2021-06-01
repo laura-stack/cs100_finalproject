@@ -18,8 +18,8 @@ public:
    Category() : Base() {}; 
    Category(string title, vector<string> genres) : Base(title, genres) {}; 
    
-   string getTitle(); 
-   vector<string> getGenres(); 
+   string getMovieTitle(); 
+   vector<string> getMovieGenres(); 
    void setTitle(string tit); 
 
    void addMovie(Movie* mov); 
