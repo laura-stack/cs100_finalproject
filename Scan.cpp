@@ -102,10 +102,11 @@ void Scan::scanMovies() {
 	        movTitle = "";
     	    date = 0;
     	    rating = 0.0;
-	
+
+			delete curMovie;
     		}
         
-    	myFile.close();
+    	myCSV.close();
 
     	return;
 }
