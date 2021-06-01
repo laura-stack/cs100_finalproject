@@ -26,12 +26,15 @@ int main() {
     findMovie->setMovies(var1);
 
     intro();
-    menu();
+    // menu();
 
-    cin >> menuOption;
+    // cin >> menuOption;
 
 	while (menuOption != 'Q' || menuOption != 'q') {
-    	if (menuOption == '1') {
+    	menu();
+		cin >> menuOption;
+		
+		if (menuOption == '1') {
      		option1(findMovie);
     	} else if(menuOption == '2') {
         	option2(findMovie);
