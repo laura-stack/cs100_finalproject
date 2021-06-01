@@ -13,10 +13,7 @@ class Base {
   public: 
 	Base() : title(""), genres() {}   
 
-	Base (string t, vector<string> g) {
-	title = t; 
- 	genres = g; 
-	}
+	Base(string title, vector<string> genres) : title(title), genres(genres){}; 
 
 	virtual string getTitle() = 0; 
 	virtual void setTitle(string newTitle) = 0; 

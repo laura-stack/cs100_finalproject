@@ -13,8 +13,9 @@ private:
    int year;
    double rating; 
 public:
-   Movie : Base() {} 
-   Movie(string title, vector<string> genres) : Base(title, genres) {}
+   
+   Movie() : Base(){} 
+   Movie(string title, vector<string>genres) : Base(title, genres) {}
 	
    string getDirector(); 
    int getYear(); 
