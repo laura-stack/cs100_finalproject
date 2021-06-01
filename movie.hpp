@@ -18,11 +18,11 @@ public:
   
    Movie(string title, vector<string>genres) : Base(title, genres) {}
 	
-   string getDirector(); 
-   int getYear(); 
-   double getRating(); 
-   string getTitle(); 
-   vector<string> getGenres(); 
+   string getMovieDirector(); 
+   int getMovieYear(); 
+   double getMovieRating(); 
+   string getMovieTitle(); 
+   vector<string> getMovieGenres(); 
 
    void addDirector(string dir); 
    void addYear (int ye); 

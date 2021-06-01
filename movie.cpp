@@ -5,23 +5,23 @@
 
 using namespace std;
 
-string Movie::getDirector() { 
+string Movie::getMovieDirector() { 
    return this->director;
 }
 
-int Movie::getYear() {
+int Movie::getMovieYear() {
    return this->year;
 }
 
-double Movie::getRating() {
+double Movie::getMovieRating() {
    return this->rating; 
 }
 
-string Movie::getTitle() {
+string Movie::getMovieTitle() {
    return this->title;
 } 
 
-vector<string> Movie::getGenres() {
+vector<string> Movie::getMovieGenres() {
    return this->genres;
 }
 

@@ -15,7 +15,7 @@ class Base {
 
 	Base(string title, vector<string> genres) : title(title), genres(genres){}; 
 
-	virtual string getTitle() = 0; 
+	virtual string getMovieTitle() = 0; 
 	virtual void setTitle(string newTitle) = 0; 
 
 };
