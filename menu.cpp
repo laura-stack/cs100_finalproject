@@ -74,7 +74,7 @@ void option5(Scan* title) {
     int releaseDate = 0;
     cout << endl << "Enter release date below: " << endl;
     cin >> releaseDate;
-    title->setFilters(new ListTenRecent(year));
+    title->setFilters(new ListTenRecent(releaseDate));
     title->sort();
 }
 
