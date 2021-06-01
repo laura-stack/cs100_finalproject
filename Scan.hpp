@@ -5,7 +5,7 @@
 #include <vector>
 #include <map>
 #include "movie.hpp"
-#include "Strategy.hpp"
+#include "Strat.hpp"
 
 using namespace std;
 
