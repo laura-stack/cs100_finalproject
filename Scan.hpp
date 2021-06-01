@@ -9,16 +9,16 @@
 
 using namespace std;
 
-class Strategy;
+class Strat;
 class Scan {
 	private:
 		map<string, Movie*> movMap;
-		Strategy* filterl
+		Strat* filter;
 	public:
 		vector<Movie*> movies;
 		vector<Movie*> getMovies();
 		map<string, Movie*> getMovMap();
-		void setFilters(Strategy* filters);
+		void setFilters(Strat* filters);
 		void setMovies(vector<Movie*> movs);
 		void sort();
 		bool isMovie(string movName);

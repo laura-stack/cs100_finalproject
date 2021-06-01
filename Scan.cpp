@@ -19,7 +19,7 @@ map<string, Movie*> Scan::getMovMap() {
 		return this->movMap;
 }
 
-void Scan::setFilters(Strategy* filters) {
+void Scan::setFilters(Strat* filters) {
 		filter = filters;
 }
 
